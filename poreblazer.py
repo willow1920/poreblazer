@@ -4,8 +4,8 @@ poreblazer.py - a utility to assist running poreblazer analysis on lammps output
 By Sibo Lin, August 20, 2020
 input: a lammps output file (.lmps)
 output: poreblazer output (density, ffv, accessible surface area, etc.)
-setup: edit the variables to reflect your system's setup: poreblazerEXE, UFFfile, and defaultsFile; make this file executable (chmod)
-execution: poreblazer.py file.lmps
+setup: edit the variables to reflect your system's setup: poreblazerEXE, UFFfile, and defaultsFile; make this file executable (chmod); have .lmps and .xyz output of your system with the same filename and in the same directory
+execution: /path/to/this/file/poreblazer.py file.lmps
 """
 import sys, os
 from shutil import copyfile
